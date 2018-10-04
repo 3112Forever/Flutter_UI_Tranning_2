@@ -126,7 +126,7 @@ class MyHomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(top: 10.0, right: 20.0),
+                  padding: const EdgeInsets.only(top: 10.0, right: 20.0,bottom: 50.0),
                   child: new Text(
                     "Shopping Mall",
                     style: new TextStyle(fontSize: 30.0),
@@ -153,6 +153,8 @@ class MyHomePage extends StatelessWidget {
                               builder: (context) => LoginPage(),
                             ));
                       },
+
+
                       child: new Container(
                         alignment: Alignment.center,
                         height: 70.0,
