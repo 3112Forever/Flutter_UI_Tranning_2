@@ -177,13 +177,13 @@ class MyHomePage extends StatelessWidget {
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(
-                        left: 20.0, right: 10.0, top: 10.0),
+                        left: 20.0, right: 10.0, top: 10.0, bottom: 10.0),
                     child: new Container(
                       alignment: Alignment.center,
                       height: 70.0,
                       // width: 70.0,
                       decoration: new BoxDecoration(
-                          color: Colors.black54,
+                          color: Colors.black,
                           borderRadius: BorderRadius.circular(10.0)),
 
                       child: new Text('Facebook',
@@ -195,13 +195,13 @@ class MyHomePage extends StatelessWidget {
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(
-                        left: 10.0, right: 20.0, top: 10.0),
+                        left: 10.0, right: 20.0, top: 10.0, bottom: 10.0),
                     child: new Container(
                       alignment: Alignment.center,
                       height: 70.0,
                       // width: 70.0,
                       decoration: new BoxDecoration(
-                          color: Colors.black54,
+                          color: Colors.black,
                           borderRadius: BorderRadius.circular(10.0)),
 
                       child: new Text('Google+',
