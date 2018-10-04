@@ -142,7 +142,83 @@ class MyHomePage extends StatelessWidget {
 
 
             ],
-            )
+            ),
+
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+
+                  padding : const EdgeInsets.only(top: 10.0, right: 20.0),
+                child: new Text(
+                  "Shopping Mall",style: new TextStyle(fontSize: 30.0),
+                ),
+                ),
+              ],
+            ),
+
+            new Row(
+              children: <Widget>[
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+                    child: new Container(
+                      alignment: Alignment.center,
+                      height: 70.0,
+                      // width: 70.0,
+                      decoration: new BoxDecoration(
+                        color: Colors.redAccent,
+                        borderRadius: BorderRadius.circular(10.0)
+                      ),
+                      
+                      child: new Text('Log In',style: new TextStyle(fontSize: 20.0,color: Colors.white)),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+
+            new Row(
+              children: <Widget>[
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20.0, right: 10.0, top: 10.0),
+                    child: new Container(
+                      alignment: Alignment.center,
+                      height: 70.0,
+                      // width: 70.0,
+                      decoration: new BoxDecoration(
+                          color: Colors.black54,
+                          borderRadius: BorderRadius.circular(10.0)
+                      ),
+
+                      child: new Text('Facebook',style: new TextStyle(fontSize: 20.0,color: Colors.white)),
+                    ),
+                  ),
+                ),
+
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 10.0, right: 20.0, top: 10.0),
+                    child: new Container(
+                      alignment: Alignment.center,
+                      height: 70.0,
+                      // width: 70.0,
+                      decoration: new BoxDecoration(
+                          color: Colors.black54,
+                          borderRadius: BorderRadius.circular(10.0)
+                      ),
+
+                      child: new Text('Google+',style: new TextStyle(fontSize: 20.0,color: Colors.white)),
+                    ),
+                  ),
+                )
+
+
+              ],
+            ),
+
           ],
         ),
       ),
