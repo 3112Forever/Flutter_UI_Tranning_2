@@ -1,0 +1,41 @@
+ new Expanded(
+                              child: new Container(
+                                height: 100.0,
+                                child: new Column(
+                                  children: <Widget>[
+                                    Expanded(
+                                      child: new Container(
+                                        color: Colors.black54,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )),
+
+                          new Expanded(
+                              child: new Container(
+                                height: 100.0,
+                                child: new Column(
+                                  children: <Widget>[
+                                    Expanded(
+                                      child: new Container(
+                                        color: Colors.blue,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )),
+
+                          new Expanded(
+                              child: new Container(
+                                height: 100.0,
+                                child: new Column(
+                                  children: <Widget>[
+                                    Expanded(
+                                      child: new Container(
+                                        color: Colors.black26,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )),

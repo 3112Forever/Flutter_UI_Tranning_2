@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
 import 'stack_icon.dart';
 
 class LoginPage extends StatelessWidget {
@@ -65,17 +66,22 @@ class LoginPage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(
                       left: 20.0, right: 10.0, top: 10.0),
-                  child: new Container(
-                    alignment: Alignment.center,
-                    height: 70.0,
-                    // width: 70.0,
-                    decoration: new BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10.0)),
+                  child: GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
+                    },
+                    child: new Container(
+                      alignment: Alignment.center,
+                      height: 70.0,
+                      // width: 70.0,
+                      decoration: new BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10.0)),
 
-                    child: new Text('Login',
-                        style: new TextStyle(
-                            fontSize: 20.0, color: Colors.white)),
+                      child: new Text('Login',
+                          style: new TextStyle(
+                              fontSize: 20.0, color: Colors.white)),
+                    ),
                   ),
                 ),
               ),
