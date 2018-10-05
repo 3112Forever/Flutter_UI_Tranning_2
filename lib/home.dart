@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_test/Motor.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -54,20 +55,25 @@ class _MainContentState extends State<MainContent> {
                     new Expanded(
                         child: Padding(
                           padding: const EdgeInsets.only(right:5.0),
-                          child: new Container(
+                          child: GestureDetector(
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>MotorView()));
+                            },
+                            child: new Container(
                       height: 100.0,
                       decoration: new BoxDecoration(
-                            borderRadius: new BorderRadius.circular(5.0),
-                            color: Colors.redAccent),
+                              borderRadius: new BorderRadius.circular(5.0),
+                              color: Colors.redAccent),
                       child: new Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            new Icon(Icons.drive_eta, color: Colors.white),
-                            new Text("Motor",
-                                style: TextStyle(color: Colors.white))
-                          ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              new Icon(Icons.drive_eta, color: Colors.white),
+                              new Text("Motor",
+                                  style: TextStyle(color: Colors.white))
+                            ],
                       ),
                     ),
+                          ),
                         )),
 
                     // Stack 22222222222222222222
@@ -185,10 +191,64 @@ class _MainContentState extends State<MainContent> {
                         )),
                   ],
                 ),
+
+
+
+              ],
+
+
+
+            ),
+
+
+
+
+          ),
+
+        ),
+
+        // New Row Start............................................
+
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal:15.0),
+          child: Padding(
+            padding: const EdgeInsets.only(top:8.0),
+            child: new Row(
+              children: <Widget>[
+                new Text(
+                  "Popular Trandding",
+                  style: TextStyle(fontSize: 30.0,fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.left,
+                ),
               ],
             ),
           ),
-        )
+        ),
+
+
+
+
+
+        // New Row Srart..........................
+
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal:15.0),
+          child: Padding(
+            padding: const EdgeInsets.only(top:8.0),
+            child: new Row(
+              children: <Widget>[
+                new Text(
+                  "Feature Ads",
+                  style: TextStyle(fontSize: 30.0,fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.left,
+                ),
+              ],
+            ),
+          ),
+        ),
+
+
+
       ],
     );
   }
